@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><MetamergeConfig IDIversion="Created by SDI7.2 - 2025-08-22" created="Fri May 01 14:32:30 CEST 2026" createdBy="eddiehartman" modified="Tue Jun 02 14:33:34 CEST 2026" modifiedBy="eddiehartman" version="7.1.1">
+<?xml version="1.0" encoding="UTF-8"?><MetamergeConfig IDIversion="Created by SDI7.2 - 2025-08-22" created="Fri May 01 14:32:30 CEST 2026" createdBy="eddiehartman" modified="Tue Jun 02 14:43:41 CEST 2026" modifiedBy="eddiehartman" version="7.1.1">
     <Folder name="AssemblyLines">
         <AssemblyLine name="_TestExcel">
-            <ModTime>1780403369095</ModTime>
+            <ModTime>1780404219535</ModTime>
             <Settings/>
             <Hooks/>
             <CheckpointConfig/>
@@ -38,7 +38,7 @@
             </LogConfig>
             <ContainerEF name="EntryFeedContainer"/>
             <ContainerDF name="DataFlowContainer">
-                <ModTime>1780403369095</ModTime>
+                <ModTime>1780404219535</ModTime>
                 <Script name="Functions">
                     <InheritFrom>/Scripts/Functions</InheritFrom>
                     <ModTime>1779282218732</ModTime>
@@ -200,9 +200,9 @@
                     <LookupLimit>25</LookupLimit>
                 </Connector>
                 <Branch name="Enabled">
-                    <ModTime>1780317890016</ModTime>
+                    <ModTime>1780404219535</ModTime>
                     <Loop name="All rows">
-                        <ModTime>1780043799734</ModTime>
+                        <ModTime>1780404219535</ModTime>
                         <LoopType>1</LoopType>
                         <LoopInitOption>2</LoopInitOption>
                         <Connector name="All rows">
@@ -346,10 +346,11 @@
                             <LookupLimit>9999</LookupLimit>
                         </Connector>
                         <Branch name="All rows">
-                            <ModTime>1780043799734</ModTime>
+                            <ModTime>1780404219535</ModTime>
                             <Script name="Log it">
-                                <ModTime>1780043799734</ModTime>
+                                <ModTime>1780404219535</ModTime>
                                 <parameter name="script"><![CDATA[var cnt = typeof(cnt) == "undefined" ? 1 : cnt+1;
+
 if (cnt == 1) {
 	task.logmsg("1 - COLUMN HEADERS")
 } else {
